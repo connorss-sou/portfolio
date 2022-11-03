@@ -1,6 +1,7 @@
 # Catch of the Day
 ### A simple fishing social media application
 ### CS-460 Advanced Databases
+[Catch of the Day Homepage](https://cs460.sou.edu/~liangz1/home.html "CotD")
 
 This is a group project that one other teammate and I created during college. The original idea of this project was to create an application where a user could share and record fish caught on a fishing trip. As users input information into the database, a user can use the front end interface in order to view interesting specific data. For example, a user can use the "Location of largest Fish" procedure in order to select a location and see the specifics of the largest fish at that location. Take a look and explore the page and check out some of the recorded catch data!
 
