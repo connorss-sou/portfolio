@@ -6,4 +6,4 @@ This is a group project that one other teammate and I created during college. Th
 
 ### Note:
 
-Since this was a group project, I only created half of the functionality for this site, so I only have access to the code that I created. My contributions can be seen under my name on the home page!
+Since this was a group project, I only created half of the functionality for this site, so I only added the code that I created. My contributions can be seen under my name on the home page!
