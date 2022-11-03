@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- 
+*	Filename: view.html
+* 	Author: Sean Connors
+*	Class: CS460
+*
+*	Purpose: This file provides a homepage for the contrib_view in order to choose a group id to view.
+*
+-->
+
+</head>
+
+<body>
+	<!-- This provides the header. -->
+	<h2> Contributor View Homepage </h2>
+	<h4> Author: Sean Connors </h4>
+	<h4 style="display:inline;">Description: </h4>
+	<p style="display:inline;"> This pages allows you to view catch records of contributors within a particular group. </p>
+	<br/>
+	<br/>
+	<h4 style="display:inline;">Justification: </h4>
+	<p style="display:inline;"> This page is useful for all contributors, and allows for the actual viewing of the records. This is what would be displayed when a user is viewing the general catch records for the group they exist in, and would allow them to stay up to date on the catches in their area.</p>
+	<br/>
+	<p>Try looking at the Alaska Group first since at the time of writing this, there are more contributors in this group, and it should display 13 rows.
+	However if you used the trigger before this, some groups may be different, so just play around and look at the catch records.
+	Currently the locations don't match up since this is a matter of showing the concept, but in a real environment, somebody in Alaska would only be in a group for Alaska. You will 
+	know that this worked if you see the catch records of users in the group. For instance, when I ran the test, alaska currently had 13 catch records from Sean (me), and Zixu.</p>
+	<p>Please select a group you'd like to see records of: </p>
+
+	<!-- This gives a dropdown menu that allows the user to choose between the names of the groups while actually giving the query a group id. -->
+  	<form action="contrib_view.php" method="POST">
+
+		<select name="id_group" id="id_group">
+			<option value="1">Researcher</option>
+			<option value="2">Oregon</option>
+			<option value="3">Rhode Island</option>
+			<option value="4">Alaska</option>
+			<option value="5">Saltwater</option>
+			
+		</select>
+      
+      <input type="submit" value="Submit" name="submit">
+
+	</form>
+</body>
+
+</html>

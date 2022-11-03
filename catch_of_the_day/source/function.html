@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- 
+Author: Sean Connors
+Date: 11/27/2021
+Class: CS460
+
+Purpose: This document allows the user to choose a fish that they would like to see a likely location for. 
+It provides a dropdown menu that allows they user to choose from the options, which puts an id into the associated php file.
+-->
+
+</head>
+
+<body>
+    <!-- Header stuff -->
+    <h2> Find Likely Location </h2>
+	<h4> Author: Sean Connors </h4>
+	<h4 style="display:inline;">Description: </h4>
+	<p style="display:inline;"> This page allows the user to view the likely location of where a selected fish may be caught. This is based which location has the most amount of catches for the selected fish. </p>
+	<br/>
+	<br/>
+	<h4 style="display:inline;">Justification: </h4>
+	<p style="display:inline;"> This page is useful for all contributors and users who may want to find a location to catch a certain fish. </p>
+	<br/>
+    <p>A good example fish is steelhead or chinook salmon because they have each been caught multiple times at a couple locations. 
+    If you pick a steelhead, there are currently 8 steelhead catch records, and the location with the most of these is the Illinois River.
+    For some fish, there are no catch records associated, so nothing will be returned, so just go back and choose another fish.</p>
+	<p>Please select a species of fish you would like to find a location for: </p>
+
+	<!-- This is where the dropdown menu appears, and it is associated with the id's, so that when the user chooses a fish, it actually submits the id of the fish. -->
+  	<form action="get_likely_location.php" method="POST">
+
+        <select name="id_fish" id="id_fish">
+            <option value="1">Steelhead</option>
+            <option value="2">Chinook Salmon</option>
+            <option value="3">Coho Salmon</option>
+            <option value="4">Bass</option>
+            <option value="5">Bluegill</option>
+            <option value="6">Crappie</option>
+            <option value="7">Black Rockfish</option>
+            <option value="8">Blue Rockfish</option>
+            <option value="9">Lingcod</option>
+            <option value="10">Cabizon</option>
+            <option value="11">Greenling</option>
+            <option value="12">Sand Shark</option>
+            <option value="13">Porgy</option>
+        </select>
+      
+      <input type="submit" value="Submit" name="submit">
+
+	</form>
+</body>
+
+</html>

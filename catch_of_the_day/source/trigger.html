@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- 
+*	Filename: trigger.html
+* 	Author: Sean Connors
+*	Class: CS460
+*
+*	Purpose: This file provides a homepage for the trigger to allow the user to choose the contributor and group id to be used.
+*
+-->
+</head>
+
+<body>
+<!-- This is where the header is written -->
+	<h2> Group Addition Trigger Homepage </h2>
+	<h4> Author: Sean Connors </h4>
+	<h4 style="display:inline;">Description: </h4>
+	<p style="display:inline;"> This pages allows you to see the affects the group addition trigger 
+       has when a new contributor is added to an existing group. </p>
+	<br/>
+	<br/>
+	<h4 style="display:inline;">Justification: </h4>
+	<p style="display:inline;"> This page is useful for users with high privalege such as administrators who may make changes in a group.</p>
+	<p style="display:inline;"> It would also be useful for when the eventual process of group movement would be automated, and this would allow for records of what is being done.</p>
+	<br/>
+	<h3>Please select a contributor and a group to move them to.</h3>
+	<p>If you would like to remove the contributor from the group select the remove option.
+	You can pick any of these options really, but you will encounter an error if the contributor is already in the group.
+    In this case, you can just go back and try again. I can't give an example, as this would be repeated and would trigger the error, so feel free to try it. You will know it worked if the log appears and shows you all of the entries to the log.</p>
+
+	<p>Please choose a contributor to move and a group to move them to.</p>
+
+	<!-- This provides two dropdown menues that allow the user to choose the name of te contributor and group they would like to move the contributor to. -->
+  	<form action="group_change_log.php" method="POST">
+		<!-- Contributor listing-->
+		<select name="id_contrib" id="id_contrib">
+            <option value="1">Sean Connors</option>
+            <option value="2">Zixu Liang</option>
+            <option value="3">Anthony Wu</option>
+            <option value="4">Bob Fisher</option>
+            <option value="5">Patrick Fish</option>
+            <option value="6">Peter Nordquist</option>
+        </select><br><br>
+		<!-- Group Listing-->
+		<select name="id_group" id="id_group">
+			<option value="NULL">Remove From Group</option>
+			<option value="1">Researcher</option>
+			<option value="2">Oregon</option>
+			<option value="3">Rhode Island</option>
+			<option value="4">Alaska</option>
+			<option value="5">Group 1</option>
+		</select>
+      
+      <input type="submit" value="Submit" name="submit">
+
+	</form>
+</body>
+
+</html>

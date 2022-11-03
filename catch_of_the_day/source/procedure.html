@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- 
+Author: Sean Connors
+Date: 11/27/2021
+Class: CS460
+Procedure Header
+-->
+
+</head>
+
+<body>
+    <!-- This html document gives the initial interface to find the largest fish caught at a location of interest.-->
+    <h2> Location Largest Fish </h2>
+	<h4> Author: Sean Connors </h4>
+	<h4 style="display:inline;">Description: </h4>
+	<p style="display:inline;"> This page allows you to view the largest fish caught at the selected location. </p>
+	<br/>
+	<br/>
+	<h4 style="display:inline;">Justification: </h4>
+	<p style="display:inline;"> This page is useful for all users who may be curious how large the fish get at certain locations. This is something that as a potential user of a system like this would use to scout out new areas I'd like to fish.</p>
+	<br/>
+    <p>The Rogue River, or Depot Bay are good options for this because they have a few catches to pick between. 
+    If the rogue river river is picked, the result should be a 21lb Chinook Salmon, since this is the largest fish in the catch records. 
+    If nothing is returned, this is because not all locations have a catch record, so there are no fish to return. Just go back and choose another location.</p>
+	  <p>Please select a location to view the largest fish: </p>
+
+	<!-- This gives a dropdown menu to the user that gives all of the locations available to pick -->
+  	<form action="location_largest_fish.php" method="POST">
+    <!-- This cheats the system a bit, and allows the user to choose a location name, but then inputs an id into the php document which the procedure needs. -->
+    <label for="location">Location:</label>
+
+    <select name="id_location" id="id_location">
+    <option value="1">Misquamicut Beach</option>
+    <option value="2">Kanektok River</option>
+    <option value="3">Rogue River</option>
+    <option value="4">Illinois River</option>
+    <option value="5">Elk River</option>
+    <option value="6">Applegate River</option>
+    <option value="7">Rogue Lake</option>
+    <option value="8">Galesville Reservoir</option>
+    <option value="9">Lost Creek Lake</option>
+    <option value="10">Lake Selmac</option>
+    <option value="11">Depot Bay</option>
+    <option value="12">Sunset Bay</option>
+    <option value="13">Port Orford</option>
+    <option value="14">Brookings</option>
+    </select>
+      
+      <input type="submit" value="Submit" name="submit">
+
+	</form>
+</body>
+
+</html>
+
